@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* src/App.css */
+.light-hue-bg {
+  background: linear-gradient(135deg, #f0f8ff, #b2d2e3, #e3b7e7, #b4e4fe, #f9c2fd, #f1bffa);
+  background-size: 400% 400%;
+  animation:none;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.full-height {
+  height: 100vh;
+}
