@@ -27,3 +27,22 @@ code {
 .full-height {
   height: 100vh;
 }
+.nav-link{
+  font-weight: 250;
+  justify-content: left;
+}
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cart-icon {
+  height: 30px; /* Adjust the size as needed */
+  margin-left: 20px;
+}
+
+.cart-button:focus {
+  outline: none; /* Remove focus outline for better styling */
+}
