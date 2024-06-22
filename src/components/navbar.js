@@ -11,11 +11,17 @@ export const Navbar= (props)=>{
 
   return (
     <nav className="light-hue-bg navbar bg-body-tertiary container-fluid" >
-      <div style={{margin:"auto",display:"flex",alignItems:"center",height:"6rem"}}>
-      <Link to="/" className="nav-brand" style={{fontSize:"4rem"}}> 
+      <div style={{margin:"auto" ,display:"flex",alignItems:"center",height:"4rem"}}>
+      <Link to="/" className="nav-brand" style={{fontSize:"3rem"}}> 
         ReactBooks
        </Link>
-      <Link to="/cart" className="nav-link" style={{fontSize:"4rem"}}>
+       <Link to="/" className="nav-link"> 
+        About
+       </Link>
+       <Link to="/" className="nav-link"> 
+        Books
+       </Link>
+      <Link to="/cart" className="nav-link" style={{fontSize:"2rem"}}>
       <FaCartArrowDown  />
       </Link>
         </div>     

@@ -1,18 +1,40 @@
-/* src/components/book.module.css */
-.book {
-    padding: 2rem;
-}
-
-.bookLoading,
-.bookError {
-    text-align: center;
-}
-
-.book ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+.productCardContainer {
+    margin: 1rem;
+    width: fit-content;
+  }
+  
+  .productCard {
+    width: 12rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card takes full height */
+  }
+  
+  .productImage {
+    height: 150px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .cardTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardText {
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .addToCartBttn {
+    margin-top: auto;
+  }
+  
