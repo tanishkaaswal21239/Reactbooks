@@ -12,7 +12,7 @@ export const Product = (props) => {
 
   return (
     <section className={classes.book}>
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '12rem' }}>
       <Card.Img variant="top" src={productImage} />
       <Card.Body>
         <Card.Title>{productName}</Card.Title>
@@ -21,9 +21,9 @@ export const Product = (props) => {
         <br/>
         {description}
         </Card.Text>
-      <button variant="primary" className="addToCartBttn" onClick={() => addToCart(id)}>
+      <Button variant="primary" className="addToCartBttn" onClick={() => addToCart(id)}>
         Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
-      </button>
+      </Button>
       </Card.Body>
     </Card>
     </section>

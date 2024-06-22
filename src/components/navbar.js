@@ -10,9 +10,9 @@ export const Navbar= (props)=>{
   };
 
   return (
-    <nav className="light-hue-bg navbar bg-body-tertiary container-fluid" style={{fontSize:"2rem"}}>
-      <Link to="/" className="nav-link"> 
-        React
+    <nav className="light-hue-bg navbar bg-body-tertiary container-fluid" style={{fontSize:"5rem"}}>
+      <Link to="/" className="nav-brand"> 
+        ReactBooks
        </Link>
       <Link to="/" className="nav-link">
         About
@@ -26,17 +26,6 @@ export const Navbar= (props)=>{
       <Link to="/cart" className="nav-link" >
       <FaCartArrowDown  />
       </Link>
-       <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form> 
      
     </nav>
   );

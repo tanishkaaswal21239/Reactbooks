@@ -45,6 +45,56 @@ body {
   }
 }
 
+
+/* Styles for the navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between to push form to the right */
+  padding: 0px;
+  /* background-color: #f8f9fa; */
+  margin-left: 20px;
+}
+
+/* Larger font size for the brand */
+.nav-brand {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  font-family:"Lucida Handwriting", cursive;
+  margin-right: 250px;
+}
+
+/* Smaller font size for the other links */
+.nav-link {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Style the form and align items */
+.navbar form {
+  display: flex;
+  align-items: right;
+}
+
+.form-control {
+  font-size: 1rem;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.fa-cart-arrow-down {
+  font-size: 1.5rem;
+}
+
 /* App.css */
 .image-container {
   position: relative;
@@ -67,4 +117,9 @@ body {
   padding: 20px; /* Optional: Add padding */
   width: 80%;
   border-radius: 8px; /* Optional: Add border radius */
+}
+.light-hue-bg {
+  background: linear-gradient(135deg, #9fc3e3, #f5d8f7, #f2cdf6, #b4e4fe, #f9c2fd, #f1bffa);
+  background-size: 400% 400%;
+  animation:none;
 }
