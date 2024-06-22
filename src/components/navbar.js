@@ -10,23 +10,15 @@ export const Navbar= (props)=>{
   };
 
   return (
-    <nav className="light-hue-bg navbar bg-body-tertiary container-fluid" style={{fontSize:"5rem"}}>
-      <Link to="/" className="nav-brand"> 
+    <nav className="light-hue-bg navbar bg-body-tertiary container-fluid" >
+      <div style={{margin:"auto",display:"flex",alignItems:"center",height:"6rem"}}>
+      <Link to="/" className="nav-brand" style={{fontSize:"4rem"}}> 
         ReactBooks
        </Link>
-      <Link to="/" className="nav-link">
-        About
-      </Link>
-      <Link to="/" className="nav-link">
-        Authors
-      </Link>
-      <Link to="/" className="nav-link">
-        Books
-      </Link>
-      <Link to="/cart" className="nav-link" >
+      <Link to="/cart" className="nav-link" style={{fontSize:"4rem"}}>
       <FaCartArrowDown  />
       </Link>
-     
+        </div>     
     </nav>
   );
 }

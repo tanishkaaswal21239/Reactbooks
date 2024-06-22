@@ -11,8 +11,9 @@ export const Product = (props) => {
   const cartItemCount = cartItems[id];
 
   return (
-    <section className={classes.book}>
-      <Card style={{ width: '12rem' }}>
+    // <section className={classes.book}>
+    <div style={{width:'fit-content',margin:'2rem'}}>
+      <Card style={{ width: '30rem',margin:"2rem" }}>
       <Card.Img variant="top" src={productImage} />
       <Card.Body>
         <Card.Title>{productName}</Card.Title>
@@ -25,7 +26,6 @@ export const Product = (props) => {
         Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
       </Button>
       </Card.Body>
-    </Card>
-    </section>
+    </Card></div>
   );
 };
